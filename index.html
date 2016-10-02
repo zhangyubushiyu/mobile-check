@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>手机号归属地查询</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			.row h1{padding: 2rem;margin-bottom: 4rem;}
+			#result{padding-top: 2rem;}
+			#result p{padding-left: 2rem;}
+			#result li{line-height: 2.5;}
+			#result ins{margin: 0 .5rem;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center"><h1>手机号归属地查询</h1></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<form id="phone-form">
+					<div class="col-xs-9">
+						<input type="text" class="form-control" id="phone" name="phone" />
+					</div>
+					<div class="col-xs-3">
+						<input type="button" class="btn btn-success " id="btn" value="查询" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="result">
+			<p style="display: none;" id="phone-p" class="text-uppercase">您查询的手机号<ins id="phone-val" class="text-success"></ins>结果如下</p>
+			<ul id="phone-html">
+			</ul>
+		</div>
+	</body>
+	<script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+	<script src="//cdn.bootcss.com/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
